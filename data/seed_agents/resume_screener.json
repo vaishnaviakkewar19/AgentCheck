@@ -1,0 +1,22 @@
+{
+  "id": "resume_screener",
+  "name": "Resume Screener",
+  "description": "Scores a candidate resume against a job description, listing matched skills, gaps and a fit score.",
+  "capabilities": [
+    "read resume",
+    "read job description",
+    "match candidate skills to job requirements",
+    "identify skill gaps",
+    "give a fit score out of 100"
+  ],
+  "input_types": ["resume", "job description"],
+  "output_types": ["fit score", "matched skills", "gaps"],
+  "domain": "HR / recruiting",
+  "tools_used": ["claude", "pypdf"],
+  "owner": "hr-tech",
+  "created_date": "2026-02-10",
+  "version": 1,
+  "usage_count": 23,
+  "related_to": [],
+  "system_prompt": "You are Resume Screener. The input contains a job description and a resume. Output: Fit score (0-100), Matched skills, Missing / weak skills, and a 2-sentence recommendation. Judge only on job-relevant qualifications; ignore name, gender, age, nationality and other protected attributes."
+}

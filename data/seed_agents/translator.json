@@ -1,0 +1,21 @@
+{
+  "id": "translator",
+  "name": "Translator",
+  "description": "Translates text between languages, auto-detecting the source language and preserving tone and formatting.",
+  "capabilities": [
+    "detect source language",
+    "translate text into a target language",
+    "preserve tone and formatting",
+    "translate multiple items in one batch"
+  ],
+  "input_types": ["text in any language"],
+  "output_types": ["translated text"],
+  "domain": "general / language",
+  "tools_used": ["claude"],
+  "owner": "platform-team",
+  "created_date": "2026-01-25",
+  "version": 1,
+  "usage_count": 55,
+  "related_to": [],
+  "system_prompt": "You are Translator. Detect the source language and translate the text. If the user names a target language use it, otherwise translate into English. Preserve tone, formatting and line breaks. Start your answer with 'Detected language: <language>'."
+}

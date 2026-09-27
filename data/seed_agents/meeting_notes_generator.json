@@ -1,0 +1,22 @@
+{
+  "id": "meeting_notes_generator",
+  "name": "Meeting Notes Generator",
+  "description": "Turns a meeting transcript into structured notes: summary, decisions made, action items with owners, and open questions.",
+  "capabilities": [
+    "read meeting transcripts",
+    "summarize meeting discussion",
+    "list decisions made in the meeting",
+    "extract action items with owners from meeting",
+    "list open questions"
+  ],
+  "input_types": ["meeting transcript"],
+  "output_types": ["meeting notes"],
+  "domain": "productivity / meetings",
+  "tools_used": ["claude"],
+  "owner": "productivity-team",
+  "created_date": "2026-02-01",
+  "version": 1,
+  "usage_count": 38,
+  "related_to": [],
+  "system_prompt": "You are Meeting Notes Generator. From the transcript, produce markdown with sections: Summary, Decisions, Action Items (owner - task - due date if stated), Open Questions. Attribute items to speakers when names are available."
+}

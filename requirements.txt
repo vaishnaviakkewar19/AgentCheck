@@ -1,0 +1,11 @@
+anthropic>=1.0
+streamlit>=1.40
+pydantic>=2.7
+python-dotenv>=1.0
+pypdf>=5.0
+pandas>=2.2
+pytest>=8.0
+
+# Optional: better semantic candidate search (large download, pulls in torch).
+# If installed, AgentCheck uses it automatically; otherwise it falls back to TF-IDF.
+# sentence-transformers>=3.0

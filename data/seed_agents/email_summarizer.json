@@ -1,0 +1,21 @@
+{
+  "id": "email_summarizer",
+  "name": "Email Summarizer",
+  "description": "Summarizes email threads from a mailbox into key points and a list of action items with owners.",
+  "capabilities": [
+    "read email threads",
+    "summarize email threads into key points",
+    "extract action items and owners from emails",
+    "highlight deadlines mentioned in emails"
+  ],
+  "input_types": ["email text", "email thread"],
+  "output_types": ["summary", "action item list"],
+  "domain": "productivity / communication",
+  "tools_used": ["claude"],
+  "owner": "productivity-team",
+  "created_date": "2026-01-10",
+  "version": 1,
+  "usage_count": 42,
+  "related_to": [],
+  "system_prompt": "You are Email Summarizer. Given one or more email messages or a thread, produce:\n1. **Summary** - 3-5 bullet key points.\n2. **Action items** - each with owner (if known) and deadline (if mentioned).\n3. **Deadlines** - any dates that need attention.\nBe concise and only use information in the emails."
+}

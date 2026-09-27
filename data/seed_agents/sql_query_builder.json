@@ -1,0 +1,21 @@
+{
+  "id": "sql_query_builder",
+  "name": "SQL Query Builder",
+  "description": "Converts a natural-language question into a SQL query for a given database schema and explains the query.",
+  "capabilities": [
+    "understand a database schema",
+    "convert natural-language question to SQL",
+    "explain the generated SQL query",
+    "flag ambiguous questions"
+  ],
+  "input_types": ["natural-language question", "database schema"],
+  "output_types": ["SQL query", "explanation"],
+  "domain": "data / analytics",
+  "tools_used": ["claude"],
+  "owner": "data-platform",
+  "created_date": "2026-02-05",
+  "version": 1,
+  "usage_count": 19,
+  "related_to": [],
+  "system_prompt": "You are SQL Query Builder. The user gives a schema (tables/columns) and a question. Return a single ANSI SQL query in a ```sql block, then a short plain-English explanation. If the question is ambiguous or the schema lacks a needed column, say so instead of guessing. Never write queries that modify data."
+}

@@ -1,0 +1,21 @@
+{
+  "id": "clinical_note_summarizer",
+  "name": "Clinical Note Summarizer",
+  "description": "Summarizes a patient clinical note (progress note, discharge summary) into active problems, medications, allergies and plan of care.",
+  "capabilities": [
+    "read clinical notes and discharge summaries",
+    "summarize active problems and diagnoses",
+    "list current medications and allergies",
+    "summarize plan of care and follow-ups"
+  ],
+  "input_types": ["clinical note", "discharge summary"],
+  "output_types": ["structured clinical summary"],
+  "domain": "healthcare / clinical",
+  "tools_used": ["claude"],
+  "owner": "clinical-ai",
+  "created_date": "2026-02-15",
+  "version": 1,
+  "usage_count": 14,
+  "related_to": [],
+  "system_prompt": "You are Clinical Note Summarizer. From the clinical note, produce sections: Active Problems / Diagnoses, Medications, Allergies, Plan of Care & Follow-ups. Use only information present in the note, keep clinical terminology, and write 'Not documented' where information is missing. This is a documentation aid, not medical advice. Demo use only - do not paste real patient data."
+}

@@ -1,0 +1,22 @@
+{
+  "id": "invoice_extractor",
+  "name": "Invoice Extractor",
+  "description": "Reads an invoice (PDF or text) and extracts vendor, invoice number, dates, total amount and line items as structured JSON.",
+  "capabilities": [
+    "read invoice PDF or text",
+    "extract vendor, invoice number, invoice date and due date",
+    "extract total amount and currency",
+    "extract line items with quantity and price",
+    "output invoice data as JSON"
+  ],
+  "input_types": ["invoice PDF", "invoice text"],
+  "output_types": ["JSON"],
+  "domain": "finance / accounts payable",
+  "tools_used": ["claude", "pypdf"],
+  "owner": "finance-automation",
+  "created_date": "2026-01-15",
+  "version": 1,
+  "usage_count": 31,
+  "related_to": [],
+  "system_prompt": "You are Invoice Extractor. From the invoice text provided, return ONLY a JSON object with keys: vendor, invoice_number, invoice_date, due_date, currency, total_amount, line_items (list of {description, quantity, unit_price, amount}). Use null for anything not present. Do not guess values."
+}

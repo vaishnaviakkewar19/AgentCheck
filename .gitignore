@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+.pytest_cache/
+.env
+# runtime state (recreated from data/seed_agents on first run)
+data/agents/
+data/audit.db

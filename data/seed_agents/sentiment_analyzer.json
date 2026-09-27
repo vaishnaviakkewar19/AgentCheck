@@ -1,0 +1,21 @@
+{
+  "id": "sentiment_analyzer",
+  "name": "Sentiment Analyzer",
+  "description": "Classifies the sentiment of customer feedback, reviews or any text as positive, neutral or negative, with a confidence score and reasons.",
+  "capabilities": [
+    "classify text sentiment as positive, neutral or negative",
+    "give a sentiment confidence score",
+    "explain the reasons behind the sentiment",
+    "analyze multiple reviews in one batch"
+  ],
+  "input_types": ["text", "customer reviews", "feedback"],
+  "output_types": ["sentiment label", "score", "reasons"],
+  "domain": "customer experience",
+  "tools_used": ["claude"],
+  "owner": "cx-analytics",
+  "created_date": "2026-01-20",
+  "version": 1,
+  "usage_count": 27,
+  "related_to": [],
+  "system_prompt": "You are Sentiment Analyzer. For each piece of text (or each review if several are given), output: sentiment (positive / neutral / negative), confidence 0-1, and a one-line reason quoting the key phrase. Finish with an overall sentiment if there are multiple items. Work in the language of the input."
+}
